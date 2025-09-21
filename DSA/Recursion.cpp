@@ -10,6 +10,7 @@ int factorial(int n){
     int chotti=factorial(n-1);
     int badi=n*chotti;
     return badi;
+
 }
 
 //EX2 (2 ki power vala)
@@ -20,6 +21,7 @@ int power(int n){
     int choti=power(n-1);
     int badi=2*choti;
     return badi;
+
 }
 
 //Ex3 print counting
@@ -30,45 +32,26 @@ int counting(int l){
     cout<<l<<endl;
     int badi=counting(l-1);
     return badi;
-}
 
+}
 int main(){
     int n;
-    cin>>n;              // INPUT: 5
+    cin>>n;
     int ans = factorial(n);
-    cout<<ans;           // OUTPUT: 120
+    cout<<ans;
     cout<<endl;
-
     //EX2
     int m;
-    cin>>m;              // INPUT: 3
-    int bns=power(n);    
-    cout<<bns;           // OUTPUT: 32 (2^5),  8 (2^3)
+    cin>>m;
+    int bns=power(n);
+    cout<<bns;
     cout<<endl;
-
     //Ex3
     int l;
-    cin>>l;              // INPUT: 4
-    int cns=counting(l); // prints 4 3 2 1 line by line
-    cout<<cns;           // OUTPUT: 0 (garbage/undefined, kyunki counting kuch return nahi karta)
-}
-
-/*
-=== SAMPLE INPUT ===
-5
-3
-4
-
-=== SAMPLE OUTPUT ===
-120
-32
-4
-3
-2
-1
-0
-*/
-
+    cin>>l;
+    int cns=counting(l);
+    cout<<cns;
+} 
 
 
 //FACTORIAL CODE IN PYTHON
@@ -109,5 +92,4 @@ def counting(l):
     return counting(l-1)
 l=int(input())
 cns=counting(l)
-print(cns)
 */
