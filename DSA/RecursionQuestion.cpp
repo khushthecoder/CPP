@@ -1,8 +1,5 @@
 #include <iostream>
 using namespace std;
-#include <iostream>
-using namespace std;
-
 //Fibonacci series ek aisi series hoti hai jisme pehle do numbers 0 aur 1 hote hain, aur uske baad har number apne pichhle do numbers ka sum hota hai.
 /*
 Fibonacci series start: 0, 1
