@@ -25,13 +25,12 @@ int power(int n){
 }
 
 //Ex3 print counting
-int counting(int l){
+void counting(int l){
     if (l==0){
         return;
     }
     cout<<l<<endl;
-    int badi=counting(l-1);
-    return badi;
+    counting(l-1);
 
 }
 int main(){
@@ -40,17 +39,19 @@ int main(){
     int ans = factorial(n);
     cout<<ans;
     cout<<endl;
+
     //EX2
     int m;
     cin>>m;
     int bns=power(n);
     cout<<bns;
     cout<<endl;
+
     //Ex3
     int l;
     cin>>l;
-    int cns=counting(l);
-    cout<<cns;
+    cout<<endl;
+    counting(l);
 } 
 
 
